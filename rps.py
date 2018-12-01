@@ -27,7 +27,7 @@ def determine_winner(player1, player2):
 		if player2 == 'scissors':
 			return 'Tie game!'
 
-player1 = getpass.getpass('rock, paper scissors? Player 1: ').lower()
-player2 = getpass.getpass('                      Player 2: ').lower()
-
-print determine_winner(player1,player2)
+def play_rps():
+	player1 = getpass.getpass('rock, paper scissors? Player 1: ').lower()
+	player2 = getpass.getpass('                      Player 2: ').lower()
+	print determine_winner(player1,player2)
